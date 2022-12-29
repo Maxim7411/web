@@ -1,0 +1,4 @@
+<h1><%= @post.title %></h1>
+<p><%= @post.body %></p>
+<%= button_to "Редактировать", edit_post_path(@post), :class => 'btn btn-warning' %>
+<%= button_to "Удалить", post_path(@post), method: :delete, data:{confirm: "Хотите удалить статью?"}, :class => 'btn btn-dander' %>
